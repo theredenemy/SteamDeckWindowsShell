@@ -27,10 +27,12 @@ def maincode():
     import sys
     import setshellkey
     import processchecklib
+    import ctypes
 
     explorerexe = "explorer.exe"
 
     setshellkey.SetAsShell(explorerexe)
+    
 
     isSteamWinShellConfigEx = os.path.isfile("SteamWinShellconfig.ini")
 
