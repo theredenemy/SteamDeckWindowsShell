@@ -37,7 +37,7 @@ def maincode():
     isSteamWinShellConfigEx = os.path.isfile("SteamWinShellconfig.ini")
 
     if isSteamWinShellConfigEx == False:
-     makeConfig()
+      makeConfig()
 
     config = configHelper.read_SteamWinShellconfig()
 
