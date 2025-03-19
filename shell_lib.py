@@ -51,10 +51,10 @@ def maincode():
     file_extension = pathlib.Path(__file__).suffix
     filenamemain = sys.executable
     print(filenamemain)
-    if ClientExeArg == "True":
-      runcmd = f"start {ClientExe} {ClientExeArg}"
-    else:
+    if ClientExeArg == "False":
       runcmd = f"start {ClientExe}"
+    else:
+      runcmd = f"start {ClientExe} {ClientExeArg}"
     endtask = f"taskkill /f /im {ClientExe}"
     if isSteamInstall == True:
       print(endtask)
