@@ -73,4 +73,5 @@ def maincode():
       time.sleep(5)
       setshellkey.SetAsShell(filenamemain)
     else:
+      print("No Launcher")
       subprocess.run(explorerexe) 
